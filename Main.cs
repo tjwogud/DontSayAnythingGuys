@@ -203,7 +203,7 @@ namespace DontSayAnythingGuys
                 }
                 else
                 {
-                    GUILayout.Label(string.Concat(Enumerable.Repeat("●", Settings.token.Length)));
+                    GUILayout.Label(string.Concat(Enumerable.Repeat("●", Settings.token?.Length ?? 0)));
                 }
             }
             Settings.showToken = GUILayout.Toggle(Settings.showToken, "");
