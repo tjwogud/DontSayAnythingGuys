@@ -192,7 +192,7 @@ namespace DontSayAnythingGuys
                 }
                 else
                 {
-                    Settings.token = GUILayout.PasswordField(Settings.token, '●');
+                    Settings.token = GUILayout.PasswordField(Settings.token ?? "", '●');
                 }
             }
             else
